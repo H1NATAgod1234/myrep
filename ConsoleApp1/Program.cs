@@ -49,13 +49,13 @@ class Program
 
     static void Main()
     {
-        // Чтение входных данных
+  
         string[] input = Console.ReadLine().Split();
         int n = int.Parse(input[0]);
         int s = int.Parse(input[1]);
         int[] segments = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
-        // Вычисление и вывод результата
+      
         int result = Solve(n, s, segments);
         Console.WriteLine(result);
     }
